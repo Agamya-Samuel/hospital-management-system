@@ -18,7 +18,8 @@
 	--grey: #7b7b7b;
 	--white: #ffffff;
 
-	--side-bar-width: 175px;
+	--box-shadow-color: rgba(165, 153, 234, 0.64);
+	--side-bar-width: 250px;
 }
 
 * {
@@ -42,10 +43,22 @@ body {
 	);
 }
 
+.main-area-background {
+	position: absolute;
+	filter: alpha(opacity=60);
+	/* IE */
+	-moz-opacity: 0.6;
+	/* Mozilla */
+	opacity: 0.6;
+	/* CSS3 */
+}
+
 .main-area {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	height: 100%;
 	background: linear-gradient(
 		118.7deg,
 		#d8d2fc,
@@ -57,14 +70,12 @@ body {
 		rgba(230, 225, 232, 0),
 		#e0e9f4
 	);
-	opacity: 0.6;
 }
 
 .sidebar {
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	/* justify-content: center; */
 	width: var(--side-bar-width);
 	height: 100vh;
 	background-color: var(--white);
@@ -74,8 +85,6 @@ body {
 .mid-content-section {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	width: calc(100% - var(--side-bar-width));
 	height: 100vh;
 	background: radial-gradient(
@@ -84,4 +93,45 @@ body {
 		#f6e3eb 47.58%,
 		#d5deed 93.12%
 	);
+	padding-top: 50px;
+	padding-right: 80px;
+	padding-left: 80px;
+}
+
+.mid-content-section > div {
+	margin: 15px;
+}
+
+.top-bar {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.hospital-logo {
+	width: 185px;
+	height: 69px;
+}
+
+.top-right-corner-box {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.current-page-heading {
+	font-size: 42px;
+}
+
+.summary {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.main-content-section {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top: 20px;
 }
