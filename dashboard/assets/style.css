@@ -1,58 +1,87 @@
 :root {
-    --primary-text: #271e4a;
+	--primary-text: #271e4a;
 	--secondary-text: rgba(0, 0, 0, 60%);
-    --blue-text: #3F779B;
-    --white-text: #FFEDED;
-    --grey-text: #B6B6B6;
-    
-    --red-button: #FF706F;
-    --green-button: #79CFA6;
-    
-    --chart-grey: #D8D2FC;
-    --chart-purple: #E3A3E0;
-    --chart-blue: #CBD6F3;
-    --chart-green: #A1D7F9;
-    --chart-red: #FE7E7D;
-	
-    --dark-blue: #271e4a;
+	--blue-text: #3f779b;
+	--white-text: #ffeded;
+	--grey-text: #b6b6b6;
+
+	--red-button: #ff706f;
+	--green-button: #79cfa6;
+
+	--chart-grey: #d8d2fc;
+	--chart-purple: #e3a3e0;
+	--chart-blue: #cbd6f3;
+	--chart-green: #a1d7f9;
+	--chart-red: #fe7e7d;
+
+	--dark-blue: #271e4a;
 	--grey: #7b7b7b;
 	--white: #ffffff;
 
-    --side-bar-width: 150px;
+	--side-bar-width: 175px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Kanit;
+}
+
+body {
+	background: linear-gradient(
+		118.7deg,
+		#d8d2fc,
+		#d8d2fc,
+		#d8d2fc 0.01%,
+		#fde2e0 28.35%,
+		#e6e4ea 58.79%,
+		#e0e9f4 99.99%,
+		rgba(230, 225, 232, 0),
+		#e0e9f4
+	);
 }
 
 .main-area {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	background: linear-gradient(
+		118.7deg,
+		#d8d2fc,
+		#d8d2fc,
+		#d8d2fc 0.01%,
+		#fde2e0 28.35%,
+		#e6e4ea 58.79%,
+		#e0e9f4 99.99%,
+		rgba(230, 225, 232, 0),
+		#e0e9f4
+	);
+	opacity: 0.6;
 }
 
 .sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: var(--side-bar-width);
-    height: 100vh;
-    background-color: var(--dark-blue);
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	/* justify-content: center; */
+	width: var(--side-bar-width);
+	height: 100vh;
+	background-color: var(--white);
+	opacity: 0.9;
 }
 
 .mid-content-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - var(--side-bar-width));
-    height: 100vh;
-    background-color: var(--red-button);
-}
-
-dashboard-home-button {
-
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: calc(100% - var(--side-bar-width));
+	height: 100vh;
+	background: radial-gradient(
+		50% 50% at 50% 50%,
+		#eff2f6,
+		#f6e3eb 47.58%,
+		#d5deed 93.12%
+	);
 }
