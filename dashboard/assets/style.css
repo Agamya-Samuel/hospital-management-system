@@ -79,7 +79,7 @@ body {
 	width: var(--side-bar-width);
 	height: 100vh;
 	background-color: var(--white);
-	opacity: 0.9;
+	/* opacity: 0.9; */
 }
 
 .mid-content-section {
@@ -93,9 +93,7 @@ body {
 		#f6e3eb 47.58%,
 		#d5deed 93.12%
 	);
-	padding-top: 50px;
-	padding-right: 80px;
-	padding-left: 80px;
+	padding: 20px 80px 0 80px;
 }
 
 .mid-content-section > div {
@@ -119,6 +117,7 @@ body {
 }
 
 .current-page-heading {
+	padding-left: 2px;
 	font-size: 42px;
 }
 
@@ -126,12 +125,10 @@ body {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin-top: 20px;
 }
 
 .main-content-section {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin-top: 20px;
 }
