@@ -87,6 +87,7 @@ body {
 .mid-content-section {
 	display: flex;
 	flex-direction: column;
+	align-content: center;
 	width: calc(100% - var(--side-bar-width));
 	height: 100vh;
 	background: radial-gradient(
