@@ -68,3 +68,17 @@
 	}
 	margin-top: 20px;
 }
+
+.red-button {
+	border-radius: 5px;
+	background-color: #ff706f;
+	width: 30%;
+	height: 50px;
+}
+
+.pink-button {
+	border-radius: 5px;
+	background-color: #e91e63;
+	width: 30%;
+	height: 50px;
+}
